@@ -1,0 +1,790 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  flex: 1;
+}
+
+.nav-links a {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: larger;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+li{
+  list-style: none;
+  
+}
+
+.logo { 
+  width: 250px;
+  margin-top: 40px;
+  margin-left: 60px;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 15px 15px 15px 15px}
+
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10 80px ;
+}
+
+.nav-menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+margin-top: 40px;
+margin-right: 40px;
+}
+
+
+.nav-link{
+  transition: 0.7 ease;
+  color: black;
+  align-items: right;
+
+}
+
+.nav-link:hover{
+  color: rgb(44, 75, 101);
+}
+
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(52, 51, 51);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+  .logo {
+
+    margin-left: 5rem;
+  }
+
+
+.hamburger{
+  display: block;
+ 
+}
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgb(152, 152, 152);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  padding: 60px;
+  opacity: 100%;
+}
+
+
+
+
+.nav-item{
+  margin: 10px;
+  
+}
+
+
+
+.nav-menu.active{
+  left:0;
+}
+
+
+.nav-menu.active .nav-link {
+  color: none;
+  border: 0px;
+ 
+}
+
+} 
+
+
+
+@media (max-width: 1200px) {
+  .logo {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slogan */
+
+    .slog2{display:none}
+
+    #one { height:62vh;}
+
+    #slogan {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 64px;
+      font: weight 200px;;
+      color: #333;
+      text-align: left;
+      margin-top: 200px;
+      margin-bottom: 50px;
+      padding-left: 5%;
+      padding-right: 2rem;
+    }
+
+    .io{
+      margin-left: 5%;
+      color: orangered;
+    }
+
+    .jojo{
+      color: rgb(150, 150, 150);
+    }
+
+
+    @media (max-width:768px){
+
+      .logo {
+    
+        margin-left: -0.1rem;
+      }
+    
+      .slog1{
+        display: none;
+      }
+    
+      .slog2{
+        display: flex;
+        margin-left: 2rem;
+        margin-top: 10rem;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .io{
+        margin-left: 2rem;
+
+      }
+    }
+    
+
+
+/*  */
+
+
+
+  .ab {
+    background-color: white;
+
+    padding: 5rem; /* Optional: If you want to add padding inside the section */
+  }
+
+  .ab h1{
+    font-size: smaller;
+    margin-bottom:3rem ;
+  }
+
+  .ab p{
+  
+    margin-bottom:5rem ;
+    font-size: 2rem;
+  }
+ 
+
+  .doce{
+    color: rgb(150, 150, 150);
+  }
+
+  @media (max-width: 1000px) {
+    .ab {
+      padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .ab p{
+      font-size: 1rem;
+    }
+  }
+
+
+
+
+
+
+
+
+/* Services */
+
+.losservicios{
+
+}
+
+
+@media (max-width: 675px) {
+  .losservicios {
+    margin-top:2rem;
+  }
+  
+}
+.services {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: calc(100vh - 100px);
+        height: 100vh;
+      }
+      
+      .uno {
+        padding: 2%;
+        margin-bottom: 30px;
+        margin-top: 2rem;
+
+      }
+      
+      .uno h2 {
+        font-weight: 600;
+        font-size: 80px;
+      }
+      
+      @media (max-width: 1200px) {
+        .uno h2 {
+          font-size: 50px;
+          padding-left: 1rem;
+  
+        }
+        
+      }
+      
+      .service {
+        width: 95%;
+        margin-bottom: 20px;
+        margin-left: 2%;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      
+      .service h3 {
+        margin-top: 0;
+      }
+      
+      .service p {
+        margin-bottom: 10px;
+      }
+      
+      .service a {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+      
+      .service a:hover {
+        background-color: #666;
+}
+
+
+
+
+
+/* Discover more */
+
+
+#discover {
+  position: relative;
+  top: -50px; /* Adjust the value as per your needs */
+  margin-bottom: 50px; /* Create space after the section */
+}
+
+#discover h1 {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+#discover h3 {
+  padding-left: 50px;
+  transition: color 0.3s ease; /* Add transition for smooth effect */
+}
+
+#discover h3:hover {
+  color: grey; /* Change the color on hover */
+}
+
+@media (max-width: 1200px) {
+#discover {
+
+  margin-top: 350px;
+}
+  
+}
+
+
+
+
+
+
+
+/* */
+
+
+
+
+
+/* footer */
+
+      
+footer {
+        background-color: #333;
+        color: #fff;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      .footer-top h3 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      
+      .footer-top p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      
+      .footer-top ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .footer-top ul li {
+        margin-bottom: 10px;
+      }
+      
+      .footer-top ul li i {
+        color: #fff;
+        margin-right: 10px;
+      }
+      
+      .social-icons {
+        margin:
+}
+
+        
+
+
+
+
+/*Advanced analytics, data eng and BI */
+
+
+
+.data {
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 40px;
+
+}
+
+
+.retorno {
+  
+  margin-top: 50px;
+  color: #bcbcbc;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.data h1{
+  font-size: 60px;
+  margin-bottom: 25px;
+ }
+ 
+ 
+ .data h3{
+   padding-bottom: 20px;
+ }
+ 
+
+
+@media (max-width: 1200px) {
+
+  .data {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  
+  }
+  
+  h3 span {
+    display: none;
+  }
+
+  .retorno {
+  
+    font-size: 18px;
+  }
+
+  .data h1{
+    font-size: 45px;
+  }
+
+  .data h3{
+    font-size: 24px;
+  }
+
+}
+  
+
+
+
+
+
+.texto {
+  padding-right: 800px;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+
+  .texto p {
+    font-size:18px;
+  }
+}
+
+
+
+
+.analyticssolution {
+
+  font-size: 24px;
+  margin-top: 100px;
+  
+}
+
+
+@media (max-width: 1200px) {
+  .texto {
+    padding-right: 20px;
+    font-size: 24px;
+  }
+
+  .analyticssolution {
+
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size:18px;
+    
+  }
+  
+}
+
+
+
+.retorno a{
+
+  color: #949494;
+}
+
+
+.analyticssolution a { 
+  color: #000000;
+}
+
+
+.segundoretorno {
+  padding: 20px; 
+  padding-left: 80px ;
+  padding-top: 50px;
+}
+
+
+.segundoretorno p {
+  display: inline;
+  margin: 10px 0; /* Add margin top and bottom */
+}
+
+
+.segundoretorno a {
+  color: #949494;
+  font-size: 24px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .segundoretorno {
+   
+    padding-left: 30px ;
+  }
+    
+  .segundoretorno a {
+   
+    font-size: 18px;
+  }   
+}
+
+
+
+
+
+
+.dataprocess {
+
+  font-size: 24px;
+  margin-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 100px;  
+}
+
+.dataprocess a { 
+  color: #141414;
+}
+
+
+@media (max-width: 1200px) {
+
+  .dataprocess {
+
+    font-size: 18px;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-bottom: 100px;  
+  }    
+}
+  
+
+
+
+
+
+
+.listone {
+font-size: 24px;
+padding-left:80px;
+margin-top:40px;
+}
+
+
+.titulo h1{
+  font-size: 60px;
+  margin-bottom: 25px;
+  padding-left: 80px; 
+}
+
+
+@media (max-width: 1200px) {
+
+  .titulo h1{
+    font-size: 45px;
+    margin-bottom: 25px;
+    padding-left: 30px; 
+    padding-right: 20px;
+  }
+
+}
+
+
+
+.tercerretorno p {
+  display: inline;
+  margin: 10px 0; 
+}
+
+
+.tercerretorno {
+  padding: 20px; 
+  padding-left: 80px ;
+  padding-top: 50px;
+}
+
+
+.tercerretorno a {
+  color: #949494;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+
+.tercerretorno {
+    padding: 20px; 
+    padding-left: 30px ;
+    padding-top: 50px;
+}
+
+.tercerretorno a {
+  color: #949494;
+  font-size: 18px;
+}
+
+
+}
+
+
+
+
+.whyrevo {
+
+  font-size: 24px;
+  margin-top: 100px;
+  padding-left:80px ; 
+  padding-bottom: 80px;
+}
+
+
+.whyrevo a { 
+  color: #000000;
+}
+
+@media (max-width: 1200px) {
+
+  .whyrevo {
+
+    font-size: 18px;
+    margin-top: 100px;
+    padding-left:30px ; 
+    padding-bottom: 80px;
+  }
+
+}
+
+
+
+/* Lista Data analytics solution, data eng and BI */
+
+.toggle-link {
+  color: #0e0e0e;
+  cursor: pointer;
+  text-decoration: underline;
+ 
+}
+
+.toggle-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 400px 10px 80px;
+}
+
+li a {
+  display: inline-block;
+  padding-left: 80px;
+  color: #0e0e0e;
+  font-size: 24px;
+}
+
+
+@media (max-width: 1200px) {
+  .toggle-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  li a {
+    padding-left: 30px;
+    padding-right: 100px;
+    font-size: 18px; /* Decrease the font size for smaller screens */
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolve</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="particles.js"></script>
+</head>
+
+
+
+<header>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="revolve.png" alt="Logo" class="logo">
+      </a>
+      <div class="nav-links">
+        <ul class="nav-menu">
+          <li class="nav-item"></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="./index.html#about-us" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="./index.html#solutions" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+</header>
+
+
+<div class="tercerretorno">
+    <p><a href="./index.html#solutions">> Intelligence solutions</a></p>
+    <p><a href="./bisolutions.html">> Bussines intelligence solutions</a></p>
+    
+</div>
+
+
+<div class="titulo">
+    <h1> Why choose Revolve?</h1>
+</div>
+
+
+<head>
+    <script>
+   function toggleContent(contentId) {
+  var content = document.getElementById(contentId);
+  if (content.style.display === "none" || content.style.display === "") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+}
+    </script>
+  </head>
+
+  <body>
+    <ul>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item1-content');">• Expertise and experience</a>
+        <div id="item1-content" class="toggle-content">
+          <p>Our team of BI specialists, data analysts, and industry experts possess a wealth of knowledge and experience in delivering 
+            best-in-class business intelligence solutions tailored to your unique needs and industry-specific requirements.
+
+        </p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item2-content');">• Cutting-Edge Tools and Techniques</a>
+        <div id="item2-content" class="toggle-content">
+          <p>We stay at the forefront of innovation by utilizing the latest BI tools, platforms, and analytics techniques, 
+            ensuring you have access to the most advanced and effective BI solutions available.</p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item3-content');">• Client-Centric Approach</a>
+        <div id="item3-content" class="toggle-content">
+          <p>We pride ourselves on our commitment to understanding your unique business challenges and goals. 
+            Our tailored approach ensures that our BI solutions are designed to deliver maximum impact on your business outcomes.
+        </p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item4-content');">• End-to-End Support</a>
+        <div id="item4-content" class="toggle-content">
+          <p>Our comprehensive business intelligence services cover the entire BI lifecycle, from strategy and consulting to implementation 
+            and ongoing support, ensuring you have a reliable partner at every stage of your BI journey.
+        </p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item5-content');">• Proven Track Record</a>
+        <div id="item5-content" class="toggle-content">
+          <p>Our proven track record of delivering successful BI projects for clients across various industries demonstrates our commitment 
+            to excellence and ability to drive meaningful results.
+        </p>
+        </div>
+      </li>
+
+      
+    </ul>
+
+
+
+    <script src="script.js"></script>
+

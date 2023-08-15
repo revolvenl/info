@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolve</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="particles.js"></script>
+</head>
+
+
+<header>
+  <nav class="navbar">
+    <a href="index.html">
+      <img src="revolve.png" alt="Logo" class="logo">
+    </a>
+    <div class="nav-links">
+      <ul class="nav-menu">
+        <li class="nav-item"></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="./index.html#about-us" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="./index.html#solutions" class="nav-link">Solutions</a></li>
+        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+
+
+<div class="segundoretorno">
+    <p><a href="./index.html#solutions">> Intelligence solutions</a></p>
+    <p><a href="./engineering.html">> Data Engineering </a></p>
+  </div>
+
+
+  <div class="titulo">
+    <h1> Data engineering solutions</h1>
+</div>
+
+
+
+
+<head>
+    <script>
+   function toggleContent(contentId) {
+  var content = document.getElementById(contentId);
+  if (content.style.display === "none" || content.style.display === "") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+}
+    </script>
+  </head>
+
+  <body>
+    <ul>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item1-content');">• Data Integration: Unifying Data from Disparate Sources</a>
+        <div id="item1-content" class="toggle-content">
+          <p>Our data integration services help you consolidate data from multiple sources, including databases, APIs, web services, 
+            and third-party applications, creating a single, coherent view of your business. We leverage industry-leading integration tools 
+            and custom-built connectors to ensure seamless data flow across your systems, enabling efficient and accurate data-driven decision-making.
+        </p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item2-content');">• Data Warehousing: Centralizing and Structuring Your Data</a>
+        <div id="item2-content" class="toggle-content">
+          <p>A well-designed data warehouse is essential for managing and analyzing large volumes of structured and unstructured data. 
+            Our team of experts helps you design, build, and optimize a scalable and high-performing data warehouse that meets your unique 
+            business requirements. We also provide ongoing support and maintenance to ensure your data warehouse remains up-to-date and relevant 
+            as your business evolves.</p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item3-content');">• Data Transformation and Enrichment: Enhancing Data Quality and Value</a>
+        <div id="item3-content" class="toggle-content">
+          <p>We understand the importance of clean and accurate data for deriving valuable insights. Our data transformation and enrichment services involve cleaning, 
+            preprocessing, and transforming your raw data into a structured format that can be easily analyzed. We also enrich your data by adding context, 
+            improving data quality, and filling in gaps, ultimately ensuring that your data is ready for analysis.</p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item4-content');">• Big Data Processing: Unlocking Insights from Large Data Volumes</a>
+        <div id="item4-content" class="toggle-content">
+          <p>Our big data processing solutions enable you to harness the power of large, complex data sets. We utilize state-of-the-art big data processing 
+            frameworks, such as Apache Hadoop, Apache Spark, and Google Cloud Dataflow, to efficiently process, store, and analyze your data at scale. 
+            Our solutions help you uncover hidden patterns and trends, providing you with actionable insights to drive business growth.</p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item5-content');">• Data Pipeline Development: Automating Data Flow and Processing</a>
+        <div id="item5-content" class="toggle-content">
+          <p>We design and develop custom data pipelines that automate the flow of data from its source to your analytics platforms and business 
+            applications. Our data pipeline solutions ensure efficient data ingestion, processing, and storage, 
+            reducing manual effort and minimizing the risk of errors. Our expertise in creating scalable and fault-tolerant data pipelines 
+            enables you to manage and process data in real-time, ensuring timely and accurate decision-making.</p>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" onclick="toggleContent('item6-content');">• Data Security and Governance: Safeguarding Your Data Assets</a>
+        <div id="item6-content" class="toggle-content">
+          <p>At Revolve, we prioritize the security and privacy of your data. Our data engineering solutions incorporate industry-standard security 
+            measures and best practices, such as encryption, authentication, and access control, to protect your data from unauthorized access and 
+            breaches. We also help you establish data governance frameworks to ensure compliance with relevant data protection regulations and maintain 
+            the integrity of your data assets.</p>
+        </div>
+      </li>
+
+      
+    </ul>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
